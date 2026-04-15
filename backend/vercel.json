@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "name": "sedna-coffee-backend",
+  "buildCommand": "npm install",
+  "dev": "node server.js",
+  "env": {
+    "PORT": "5000",
+    "NODE_ENV": "production"
+  },
+  "functions": {
+    "server.js": {
+      "runtime": "nodejs18.x"
+    }
+  }
+}
