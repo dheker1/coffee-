@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-coffee-50 text-coffee-900;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif font-semibold;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply px-6 py-3 bg-coffee-600 text-white rounded-lg hover:bg-coffee-700 transition duration-300 font-semibold;
+  }
+  
+  .btn-secondary {
+    @apply px-6 py-3 bg-white text-coffee-600 border-2 border-coffee-600 rounded-lg hover:bg-coffee-50 transition duration-300 font-semibold;
+  }
+  
+  .section-heading {
+    @apply text-4xl md:text-5xl font-serif font-bold text-coffee-900 mb-6;
+  }
+}
